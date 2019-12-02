@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/listno"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textSize="16dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/listkode"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:text="A1234567"
+            android:textSize="16dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/listnama"
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:text="Pemograman Mobile"
+            android:textSize="16dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/listsks"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="4"
+            android:textSize="16dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/listangka"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="80"
+            android:textSize="16dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/listhuruf"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="AB"
+            android:textSize="16dp"
+            android:textColor="#000"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

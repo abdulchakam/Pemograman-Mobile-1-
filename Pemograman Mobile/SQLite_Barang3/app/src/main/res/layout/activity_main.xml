@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/addphoto" />
+        <EditText
+            android:id="@+id/edtNama"
+            android:layout_below="@id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nama Barang"
+            android:layout_centerHorizontal="true"
+            android:ems="10"/>
+        <EditText
+            android:id="@+id/edtHarga"
+            android:layout_below="@id/edtNama"
+            android:hint="Harga"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtKet"
+            android:layout_below="@id/edtHarga"
+            android:hint="Keterangan"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_below="@id/edtKet"
+            android:layout_centerHorizontal="true"
+            android:minWidth="160dp"
+            android:text="Simpan Data"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnList"
+            android:layout_below="@id/btnAdd"
+            android:layout_centerHorizontal="true"
+            android:minWidth="160dp"
+            android:text="Lihat Data"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</ScrollView>

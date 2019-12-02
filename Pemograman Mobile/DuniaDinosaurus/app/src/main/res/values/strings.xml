@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Dunia Dinosaurus</string>
+    <string name="dino_name">Nama Dinosaurus</string>
+    <string name="detail">Dunia Dinosaurus</string>
+    <string name="profile">Profile</string>
+
+</resources>

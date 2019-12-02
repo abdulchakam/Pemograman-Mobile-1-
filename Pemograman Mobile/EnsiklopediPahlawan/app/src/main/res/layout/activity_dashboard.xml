@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorRed"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/title"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRed"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            app:cardBackgroundColor="@color/colorRed">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                app:cardCornerRadius="40dp"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                app:cardBackgroundColor="@color/colorAccent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="620dp">
+
+                    <GridLayout
+                        android:id="@+id/gridlayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_weight="4"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="2"
+                        android:columnOrderPreserved="false"
+                        android:padding="10dp"
+                        android:rowCount="2">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_pahlawan"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="130dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/kemerdekaan" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/bg"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="110dp"
+                                android:layout_height="130dp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/reformasi" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg"/>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/colorRed"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="110dp"
+                                android:layout_height="130dp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/pendidikan" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="110dp"
+                                android:layout_height="130dp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/revolusi" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:id="@+id/gridlayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="4"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="1"
+                        android:columnOrderPreserved="false"
+                        android:padding="10dp"
+                        android:rowCount="4"
+                        android:layout_below="@id/gridlayout1">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardBackgroundColor="@color/colorRed">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Apa itu pahlawan kemerdekaan ?"
+                                android:textColor="@color/colorAccent"
+                                android:fontFamily="monospace"
+                                android:textStyle="bold"
+                                android:gravity="left|center"
+                                android:layout_marginLeft="20dp"/>
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_chevron_right_black_24dp"
+                                android:layout_gravity="right"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardBackgroundColor="@color/colorRed">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Apa itu pahlawan reformasi ?"
+                                android:textColor="@color/colorAccent"
+                                android:fontFamily="monospace"
+                                android:textStyle="bold"
+                                android:gravity="left|center"
+                                android:layout_marginLeft="20dp"/>
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_chevron_right_black_24dp"
+                                android:layout_gravity="right"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardBackgroundColor="@color/colorRed">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Apa itu pahlawan pendidikan ?"
+                                android:textColor="@color/colorAccent"
+                                android:fontFamily="monospace"
+                                android:textStyle="bold"
+                                android:gravity="left|center"
+                                android:layout_marginLeft="20dp"/>
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_chevron_right_black_24dp"
+                                android:layout_gravity="right"/>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardBackgroundColor="@color/colorRed">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Apa itu pahlawan revolusi ?"
+                                android:textColor="@color/colorAccent"
+                                android:fontFamily="monospace"
+                                android:textStyle="bold"
+                                android:gravity="left|center"
+                                android:layout_marginLeft="20dp"/>
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_chevron_right_black_24dp"
+                                android:layout_gravity="right"/>
+                        </androidx.cardview.widget.CardView>
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CopyRight@MAC2019"
+                        android:fontFamily="monospace"
+                        android:textColor="@color/colorSilver"
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:layout_below="@id/gridlayout2"/>
+
+
+                </RelativeLayout>
+                </ScrollView>
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

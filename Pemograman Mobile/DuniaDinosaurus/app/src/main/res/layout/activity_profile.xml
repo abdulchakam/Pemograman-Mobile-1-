@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context=".profile">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="MY PROFILE"
+            android:fontFamily="monospace"
+            android:textColor="#F3F3F3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+                 <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="120dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="40dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="1000dp"
+                            app:cardBackgroundColor="#F3F3F3"
+                            app:cardCornerRadius="30dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="100dp">
+                                    <TextView
+                                        android:id="@+id/tv_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="M.ABDUL CHAKAM"
+                                        android:textColor="#598BE5"
+                                        android:fontFamily="monospace"
+                                        android:textSize="20dp"
+                                        android:textAlignment="center"
+                                        android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="muhabdulchakam@gmail.com"
+                                    android:textAlignment="center"
+                                    android:textColor="#535353"
+                                    android:fontFamily="monospace"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardCornerRadius="60dp"
+        android:layout_centerHorizontal="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/myfoto"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="5dp"
+                app:civ_border_overlay="true"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailDino">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/gradient2"
+        android:orientation="vertical"
+        android:gravity="center">
+            <LinearLayout
+                android:layout_width="500dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/footer"
+                android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/detail_image"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/triceratops"
+                        android:layout_marginTop="60dp"
+                        android:layout_gravity="center"/>
+
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+    <TextView
+        android:id="@+id/nama_dino"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="NAMA DINO"
+        android:gravity="top|center"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                 <TextView
+                android:id="@+id/detail_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ankylosaurus adalah salah satu jenis dinosaurus yang memiliki tubuh sepanjang 9 meter (30 kaki),dan beratnya mencapai setidaknya 7 ton.Ankylosaurus memiliki tubuh yang dilindungi oleh semacam cangkang keras yang membuat tubuhnya tidak bisa diserang dengan mudah, bahkan oleh Tyrannosaurus-Rex.Perisai tulang setebal 5 cm melindungi tubuhnya yang pendek,yang disangga oleh empat kakinya yang kuat,pendek dan gemuk.Di ekornya terdapat bola dari batu seberat 5 kg. Jika Ankylosaurus dihadang oleh lawannya, ia akan menyerang lawan tersebut dengan ekor kerasnya dan dalam sekejap lawannya akan terjatuh. Para ilmuwan dan ahli palaeontologi biasanya menyebut Ankylosaurus dengan sebutan 'Anky kecil'. "
+                android:textSize="13dp"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="monospace"
+                     android:justificationMode="inter_word"
+                     android:lineHeight="25dp"/>
+        </RelativeLayout>
+    </ScrollView>
+    </LinearLayout>
+</LinearLayout>
